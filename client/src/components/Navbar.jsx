@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* Logo */}
           <a
             href="#home"
-            className="text-2xl font-KetikaKesepianDemoRegular font-bold tracking-tight text-gray-900 dark:text-white"
+            className="text-2xl font-KetikaKesepianDemoRegular font-bold tracking-tight text-white"
             style={{ letterSpacing: "0.02em" }}
           >
             YourName <span className="font-KetikaKesepianDemoRegular">Photography</span>
@@ -56,7 +56,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors duration-200 font-medium"
+                className="text-white dark:text-gray-200 hover:text-blue-500 dark:hover:text-white transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
