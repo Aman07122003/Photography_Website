@@ -1,5 +1,4 @@
-/* ✅ Google font import must come first */
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 
 /* ✅ Tailwind should come after */
 @import "tailwindcss";
