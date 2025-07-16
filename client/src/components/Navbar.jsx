@@ -16,7 +16,7 @@ const Navbar = () => {
   // Shadow on scroll
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      setScrolled(window.scrollY > window.innerHeight * 0.8);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -35,8 +35,8 @@ const Navbar = () => {
     <nav
       className={`fixed w-full top-0 z-50 transition-shadow ${
         scrolled
-          ? "shadow-md bg-white/80 dark:bg-gray-900/80 backdrop-blur"
-          : "bg-transparent"
+          ? "hidden"
+          : "visible"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
@@ -44,10 +44,10 @@ const Navbar = () => {
           {/* Logo */}
           <a
             href="#home"
-            className="text-2xl font-KetikaKesepianDemoRegular font-bold tracking-tight text-white"
+            className="text-2xl font-ketika font-bold tracking-tight text-white"
             style={{ letterSpacing: "0.02em" }}
           >
-            YourName <span className="font-KetikaKesepianDemoRegular">Photography</span>
+            YourName <span className="font-ketika">Photography</span>
           </a>
 
           {/* Desktop Menu */}
