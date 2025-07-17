@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import PreWedd from "../assets/Prewedd.jpg";
+import PreWedd from "../assets/PreWedd.jpg";
 import first from "../assets/PreWedding_Pics/first.jpg";
 import second from "../assets/PreWedding_Pics/second.jpg";
 import third from "../assets/PreWedding_Pics/third.avif";
