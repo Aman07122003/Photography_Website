@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Aman07122003.github.io/Photography_Website/",
-
+  "homepage": "https://Aman07122003.github.io/Photography_Website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
