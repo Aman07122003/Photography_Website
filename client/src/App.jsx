@@ -1,15 +1,24 @@
-import React from 'react'
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import Home from './pages/Home'
+import React, { useState } from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import Loader from "./components/Loader";
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-      </Routes>
-    </BrowserRouter>
-  )
-}
+  const [isLoading, setIsLoading] = useState(true);
 
-export default App
+  return (
+    <>
+      {isLoading ? (
+        <Loader onFinish={() => setIsLoading(false)} />
+      ) : (
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      )}
+    </>
+  );
+};
+
+export default App;
