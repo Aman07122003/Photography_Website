@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Profile from "../assets/profile.jpeg";
+import Profile from "../assets/Profile.jpeg";
 
 const Awards = () => {
   return (
