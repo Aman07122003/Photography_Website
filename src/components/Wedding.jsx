@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import wed from "../assets/wed.jpg";
+import wed from "../assets/wed.png";
 import first from "../assets/Wedding/first.webp";
 import second from "../assets/Wedding/second.avif";
 import third from "../assets/Wedding/third.jpg";
@@ -43,6 +43,8 @@ const Wedding = () => {
           className="absolute top-0 left-0 w-full h-full object-cover"
           style={{ y: imageY, opacity: imageOpacity }}
         />
+
+        
       </div>
 
       {/* Cards Section */}

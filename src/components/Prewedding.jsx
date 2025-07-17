@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import PreWedd from "../assets/PreWedd.jpg";
+import PreWedd from "../assets/PreWedd.png";
 import first from "../assets/PreWedding_Pics/first.jpg";
 import second from "../assets/PreWedding_Pics/second.jpg";
 import third from "../assets/PreWedding_Pics/third.avif";
@@ -40,10 +40,10 @@ const Prewedding = () => {
         <motion.img
           src={PreWedd}
           alt="Pre-wedding"
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0  left-0 w-full h-full object-cover"
           style={{ y: imageY, opacity: imageOpacity }}
         />
-        
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 via-transparent to-black/60 pointer-events-none"></div>
       </div>
 
       {/* Cards Section */}
