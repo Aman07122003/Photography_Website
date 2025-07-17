@@ -15,5 +15,4 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/Photography_Website/',
 })
