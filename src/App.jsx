@@ -11,7 +11,7 @@ const App = () => {
       {isLoading ? (
         <Loader onFinish={() => setIsLoading(false)} />
       ) : (
-        <BrowserRouter>
+        <BrowserRouter basename="/Photography_Website">
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
