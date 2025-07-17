@@ -14,6 +14,7 @@ const App = () => {
         <BrowserRouter basename="/Photography_Website">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </BrowserRouter>
       )}
