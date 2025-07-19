@@ -4,8 +4,8 @@ import Profile from "../assets/Profile.jpeg";
 
 const Awards = () => {
   return (
-    <section className="w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white px-4 sm:px-8 md:px-16 py-16 md:py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+    <section className="w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white px-2 sm:px-4 md:px-16 py-10 sm:py-16 md:py-24 lg:py-32">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 sm:gap-12 lg:gap-16">
         {/* Left Content */}
         <motion.div
           className="flex-1 text-center md:text-left"
@@ -16,7 +16,7 @@ const Awards = () => {
         >
           <div className="mb-2">
             <motion.span 
-              className="inline-block bg-amber-500/20 text-amber-400 px-4 py-1 rounded-full text-sm font-medium mb-4"
+              className="inline-block bg-amber-500/20 text-amber-400 px-4 py-1 rounded-full text-xs sm:text-sm font-medium mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
@@ -27,7 +27,7 @@ const Awards = () => {
           </div>
 
           <motion.h1
-            className="font-bold leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6"
+            className="font-bold leading-tight text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 sm:mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
@@ -40,7 +40,7 @@ const Awards = () => {
           </motion.h1>
 
           <motion.div
-            className="w-20 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto md:mx-0 my-6"
+            className="w-20 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto md:mx-0 my-4 sm:my-6"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -48,7 +48,7 @@ const Awards = () => {
           />
 
           <motion.p
-            className="text-gray-300 text-lg md:text-xl lg:text-xl leading-relaxed max-w-xl mx-auto md:mx-0 mb-8"
+            className="text-gray-300 text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed max-w-xl mx-auto md:mx-0 mb-6 sm:mb-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
@@ -120,13 +120,13 @@ const Awards = () => {
 
         {/* Right Image */}
         <motion.div
-          className="flex-1 flex justify-center md:justify-end relative"
+          className="flex-1 flex justify-center md:justify-end relative mt-8 md:mt-0"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-[0_25px_50px_-12px_rgba(245,158,11,0.25)] group">
+          <div className="relative w-48 h-48 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-[0_25px_50px_-12px_rgba(245,158,11,0.25)] group">
             <motion.img
               src={Profile}
               alt="Profile"

@@ -34,7 +34,7 @@ const Prewedding = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="relative h-[300vh] w-full">
+    <section ref={sectionRef} className="relative min-h-[300vh] w-full">
       {/* Sticky background */}
       <div className="sticky top-0 h-screen overflow-hidden">
         <motion.img
@@ -49,12 +49,12 @@ const Prewedding = () => {
       {/* Cards Section */}
       <motion.div
         style={{ y: cardsY }}
-        className="absolute top-0 left-0 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 mt-[100vh]"
+        className="absolute top-0 left-0 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-2 sm:px-6 mt-[100vh]"
       >
         {images.map((img, index) => (
           <motion.div
             key={index}
-            className="relative w-full h-80 rounded-xl overflow-hidden shadow-xl group cursor-pointer"
+            className="relative w-full h-56 sm:h-80 rounded-xl overflow-hidden shadow-xl group cursor-pointer"
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -65,10 +65,10 @@ const Prewedding = () => {
               <img
                 src={img}
                 alt={`Prewedding ${index + 1}`}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
 
-                <div className="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center text-xl py-2">
+                <div className="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center text-base sm:text-xl py-2">
                     {coupleNames[index]}
                 </div>
 

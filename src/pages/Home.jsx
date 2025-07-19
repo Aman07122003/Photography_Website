@@ -24,11 +24,11 @@ const Home = () => {
   const preweddingScale = useTransform(scrollYProgress, [0.25, 0.35], [0.9, 1]);
 
   return (
-    <div ref={containerRef} className="h-[300vh] relative">
+    <div ref={containerRef} className="min-h-[300vh] relative">
       {/* Hero Section */}
       <motion.div
         style={{ opacity: heroOpacity, scale: heroScale }}
-        className=" sticky top-0 flex items-center justify-center bg-gray-900"
+        className="sticky md:top-0 top-auto flex items-center justify-center bg-gray-900 min-h-screen md:h-screen"
       >
         <Hero />
       </motion.div>
@@ -36,7 +36,7 @@ const Home = () => {
       {/* Awards Section */}
       <motion.div
         style={{ opacity: awardsOpacity, scale: awardsScale }}
-        className="h-screen sticky top-0 flex items-center justify-center bg-black"
+        className="min-h-screen md:h-screen flex items-center justify-center bg-black"
       >
         <Awards />
       </motion.div>
@@ -44,7 +44,7 @@ const Home = () => {
       {/* Prewedding Section */}
       <motion.div
         style={{ opacity: preweddingOpacity, scale: preweddingScale }}
-        className="h-screen sticky top-0 flex items-center justify-center bg-gray-800"
+        className="min-h-screen md:h-screen flex items-center justify-center bg-gray-800"
       >
         <Prewedding />
       </motion.div>
